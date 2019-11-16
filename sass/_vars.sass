@@ -1,0 +1,35 @@
+// Default variables:
+$accent: orange
+$text: #333
+
+// User variables:
+$main-color: #5e239d
+
+// Fonts
+$light-font:       "Mplus1p-Light"
+$regular-font:     "Mplus1p-Regular"
+$bold-font:        "Mplus1p-Bold"
+$extra-bold-font:  "Mplus1p-ExtraBold"
+
+//Mixins
+=Text-style-header()
+    letter-spacing: 2px
+    line-height: 23.6px
+    font-size: 14.4px
+
+=Underline-hover()
+    background: linear-gradient(white) bottom / 0 .1em no-repeat
+    transition: 0.5s background-size
+
+=Arrow-link()
+    width: 48px
+    height: 48px
+    border: solid 1px rgba(255, 255, 255, 0.5)
+    background-color: rgba(196, 196, 196, 0.1)
+    display: block
+    border-radius: 48px
+    position: absolute
+    transition: all .5s ease
+    background-image: url(../img/_src/main_arrow_right.svg)
+    background-repeat: no-repeat
+    background-position: center
